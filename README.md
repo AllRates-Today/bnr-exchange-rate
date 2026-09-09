@@ -70,10 +70,10 @@ const pair = await getRate('EUR', 'RON', { apiKey: 'art_live_...' });
 {
   bank: 'bnr',
   name: 'National Bank of Romania',
-  rate_date: '2026-08-11',   // National Bank of Romania's own publication date
+  rate_date: '2026-09-09',   // National Bank of Romania's own publication date
   source: 'EUR',
   target: 'RON',
-  rate: 5.2424,
+  rate: 5.2542,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -98,9 +98,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bnr',
   name: 'National Bank of Romania',
-  rate_date: '2026-08-11',
+  rate_date: '2026-09-09',
   rates: [
-    { "base": "EUR", "quote": "RON", "type": "reference", "value": 5.2424 },
+    { "base": "EUR", "quote": "RON", "type": "reference", "value": 5.2542 },
     // … the rest of the published table (37 currencies vs RON)
   ],
   disclaimer: '…'
@@ -140,7 +140,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bnr-exchange-rate';
 
 const series = await getHistory(
-  { source: 'EUR', target: 'RON', from: '2026-01-01', to: '2026-08-11' },
+  { source: 'EUR', target: 'RON', from: '2026-01-01', to: '2026-09-09' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -153,11 +153,11 @@ const series = await getHistory(
   source: 'EUR',
   target: 'RON',
   from: '2026-01-01',
-  to: '2026-08-11',
+  to: '2026-09-09',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-08-11', rate: 5.2424, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-09', rate: 5.2542, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -170,9 +170,9 @@ Pass `{ symbol: 'EUR' }` instead of `source`/`target` to get the raw published r
 
 ## 🗺️ Currencies covered
 
-National Bank of Romania currently publishes rates covering **38 currencies** (as of the latest table):
+National Bank of Romania currently publishes rates covering **37 currencies** against the RON (as of the latest table):
 
-`AED` · `AUD` · `BRL` · `CAD` · `CHF` · `CNY` · `CZK` · `DKK` · `EGP` · `EUR` · `GBP` · `HKD` · `HUF` · `IDR` · `ILS` · `INR` · `ISK` · `JPY` · `KRW` · `MDL` · `MXN` · `MYR` · `NOK` · `NZD` · `PHP` · `PLN` · `RON` · `RSD` · `RUB` · `SEK` · `SGD` · `THB` · `TRY` · `UAH` · `USD` · `XAU` · `XDR` · `ZAR`
+🇦🇪 `AED` · 🇦🇺 `AUD` · 🇧🇷 `BRL` · 🇨🇦 `CAD` · 🇨🇭 `CHF` · 🇨🇳 `CNY` · 🇨🇿 `CZK` · 🇩🇰 `DKK` · 🇪🇬 `EGP` · 🇪🇺 `EUR` · 🇬🇧 `GBP` · 🇭🇰 `HKD` · 🇭🇺 `HUF` · 🇮🇩 `IDR` · 🇮🇱 `ILS` · 🇮🇳 `INR` · 🇮🇸 `ISK` · 🇯🇵 `JPY` · 🇰🇷 `KRW` · 🇲🇩 `MDL` · 🇲🇽 `MXN` · 🇲🇾 `MYR` · 🇳🇴 `NOK` · 🇳🇿 `NZD` · 🇵🇭 `PHP` · 🇵🇱 `PLN` · 🇷🇸 `RSD` · 🇷🇺 `RUB` · 🇸🇪 `SEK` · 🇸🇬 `SGD` · 🇹🇭 `THB` · 🇹🇷 `TRY` · 🇺🇦 `UAH` · 🇺🇸 `USD` · `XAU` · `XDR` · 🇿🇦 `ZAR`
 
 ## ⚖️ Published vs derived rates
 
@@ -235,6 +235,14 @@ getRate('EUR', 'RON', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 2005 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/bnr.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/bnr/latest.json`
 
 ## 🔗 Links
 
