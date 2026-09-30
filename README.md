@@ -85,10 +85,10 @@ const pair = await getRate('EUR', 'RON', { apiKey: 'art_live_...' });
 {
   bank: 'bnr',
   name: 'National Bank of Romania',
-  rate_date: '2026-09-09',   // National Bank of Romania's own publication date
+  rate_date: '2026-09-25',   // National Bank of Romania's own publication date
   source: 'EUR',
   target: 'RON',
-  rate: 5.2542,
+  rate: 5.2718,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -113,9 +113,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'bnr',
   name: 'National Bank of Romania',
-  rate_date: '2026-09-09',
+  rate_date: '2026-09-25',
   rates: [
-    { "base": "EUR", "quote": "RON", "type": "reference", "value": 5.2542 },
+    { "base": "EUR", "quote": "RON", "type": "reference", "value": 5.2718 },
     // … the rest of the published table (37 currencies vs RON)
   ],
   disclaimer: '…'
@@ -155,7 +155,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'bnr-exchange-rate';
 
 const series = await getHistory(
-  { source: 'EUR', target: 'RON', from: '2026-01-01', to: '2026-09-09' },
+  { source: 'EUR', target: 'RON', from: '2026-01-01', to: '2026-09-25' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -168,11 +168,11 @@ const series = await getHistory(
   source: 'EUR',
   target: 'RON',
   from: '2026-01-01',
-  to: '2026-09-09',
+  to: '2026-09-25',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-09', rate: 5.2542, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-25', rate: 5.2718, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
