@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/bnr-exchange-rate.svg)](https://github.com/AllRates-Today/bnr-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/bnr-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![EUR/RON today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbnr%3Fsource%3DEUR%26target%3DRON&query=%24.rate&label=EUR%2FRON%20published%20by%20National%20Bank%20of%20Romania&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bnr/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fbnr%3Fsource%3DEUR%26target%3DRON&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/bnr/)
 
 **Official National Bank of Romania (Romania) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers National Bank of Romania itself prints, every business day.**
 
@@ -32,6 +34,56 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full National Bank of Romania table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-08** by National Bank of Romania — 37 rates. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| AED | RON | reference | 1.3017 |
+| AUD | RON | reference | 3.324 |
+| BRL | RON | reference | 0.9522 |
+| CAD | RON | reference | 3.3524 |
+| CHF | RON | reference | 5.7304 |
+| CNY | RON | reference | 0.7134 |
+| CZK | RON | reference | 0.2191 |
+| DKK | RON | reference | 0.7154 |
+| EGP | RON | reference | 0.0912 |
+| EUR | RON | reference | 5.347 |
+| GBP | RON | reference | 6.3058 |
+| HKD | RON | reference | 0.6093 |
+| HUF | RON | reference | 0.014577 |
+| IDR | RON | reference | 0.000267 |
+| ILS | RON | reference | 1.5536 |
+| INR | RON | reference | 0.0494 |
+| ISK | RON | reference | 0.039029 |
+| JPY | RON | reference | 0.030217 |
+| KRW | RON | reference | 0.003556 |
+| MDL | RON | reference | 0.267 |
+| MXN | RON | reference | 0.2652 |
+| MYR | RON | reference | 1.1686 |
+| NOK | RON | reference | 0.4994 |
+| NZD | RON | reference | 2.6724 |
+| PHP | RON | reference | 0.076 |
+| PLN | RON | reference | 1.2211 |
+| RSD | RON | reference | 0.0456 |
+| RUB | RON | reference | 0.0559 |
+| SEK | RON | reference | 0.4775 |
+| SGD | RON | reference | 3.7296 |
+| THB | RON | reference | 0.142 |
+| TRY | RON | reference | 0.0969 |
+| UAH | RON | reference | 0.1066 |
+| USD | RON | reference | 4.7814 |
+| XAU | RON | reference | 19703.72 |
+| XDR | RON | reference | 6.4635 |
+| ZAR | RON | reference | 0.2866 |
+
+Source: [Official rates published by BNR, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bnr/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
