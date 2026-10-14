@@ -42,47 +42,47 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-13** by National Bank of Romania — 37 rates. Updated 2026-10-13.
+Published **2026-10-14** by National Bank of Romania — 37 rates. Updated 2026-10-14.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | RON | reference | 1.3 |
-| AUD | RON | reference | 3.3283 |
-| BRL | RON | reference | 0.9574 |
-| CAD | RON | reference | 3.3484 |
-| CHF | RON | reference | 5.7316 |
-| CNY | RON | reference | 0.7132 |
-| CZK | RON | reference | 0.2191 |
-| DKK | RON | reference | 0.7139 |
-| EGP | RON | reference | 0.0904 |
-| EUR | RON | reference | 5.337 |
-| GBP | RON | reference | 6.3193 |
-| HKD | RON | reference | 0.6084 |
-| HUF | RON | reference | 0.014653 |
-| IDR | RON | reference | 0.000267 |
-| ILS | RON | reference | 1.5526 |
-| INR | RON | reference | 0.0501 |
-| ISK | RON | reference | 0.039185 |
-| JPY | RON | reference | 0.030206 |
-| KRW | RON | reference | 0.003566 |
-| MDL | RON | reference | 0.2654 |
-| MXN | RON | reference | 0.2614 |
+| AED | RON | reference | 1.2989 |
+| AUD | RON | reference | 3.3445 |
+| BRL | RON | reference | 0.949 |
+| CAD | RON | reference | 3.3564 |
+| CHF | RON | reference | 5.7239 |
+| CNY | RON | reference | 0.7128 |
+| CZK | RON | reference | 0.2192 |
+| DKK | RON | reference | 0.7143 |
+| EGP | RON | reference | 0.0899 |
+| EUR | RON | reference | 5.3393 |
+| GBP | RON | reference | 6.3273 |
+| HKD | RON | reference | 0.6079 |
+| HUF | RON | reference | 0.014684 |
+| IDR | RON | reference | 0.000266 |
+| ILS | RON | reference | 1.5535 |
+| INR | RON | reference | 0.0502 |
+| ISK | RON | reference | 0.03926 |
+| JPY | RON | reference | 0.030109 |
+| KRW | RON | reference | 0.003571 |
+| MDL | RON | reference | 0.2656 |
+| MXN | RON | reference | 0.2597 |
 | MYR | RON | reference | 1.1686 |
-| NOK | RON | reference | 0.4996 |
-| NZD | RON | reference | 2.6763 |
-| PHP | RON | reference | 0.0761 |
-| PLN | RON | reference | 1.2187 |
+| NOK | RON | reference | 0.5026 |
+| NZD | RON | reference | 2.6804 |
+| PHP | RON | reference | 0.0759 |
+| PLN | RON | reference | 1.2219 |
 | RSD | RON | reference | 0.0455 |
-| RUB | RON | reference | 0.057 |
-| SEK | RON | reference | 0.4774 |
-| SGD | RON | reference | 3.7303 |
-| THB | RON | reference | 0.1423 |
+| RUB | RON | reference | 0.0568 |
+| SEK | RON | reference | 0.4787 |
+| SGD | RON | reference | 3.7219 |
+| THB | RON | reference | 0.1421 |
 | TRY | RON | reference | 0.0966 |
-| UAH | RON | reference | 0.1059 |
-| USD | RON | reference | 4.7748 |
-| XAU | RON | reference | 19994.456 |
-| XDR | RON | reference | 6.4567 |
-| ZAR | RON | reference | 0.2895 |
+| UAH | RON | reference | 0.106 |
+| USD | RON | reference | 4.7706 |
+| XAU | RON | reference | 19765.659 |
+| XDR | RON | reference | 6.4542 |
+| ZAR | RON | reference | 0.2893 |
 
 Source: [Official rates published by BNR, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bnr/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
