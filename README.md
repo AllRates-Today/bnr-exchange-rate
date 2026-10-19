@@ -33,56 +33,59 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/bnr').the
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
 
 ## 📈 Latest published table
 
 [![Latest National Bank of Romania table](https://allratestoday.com/api/open/central-bank/bnr/table.svg)](https://allratestoday.com/central-bank-rates-api/bnr/)
 
-The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
+The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-16** by National Bank of Romania — 37 rates. Updated 2026-10-16.
+<details>
+<summary>Table as text: published 2026-10-19 by National Bank of Romania — 37 rates. Updated 2026-10-19.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | RON | reference | 1.2915 |
-| AUD | RON | reference | 3.3007 |
-| BRL | RON | reference | 0.9303 |
-| CAD | RON | reference | 3.3497 |
-| CHF | RON | reference | 5.7558 |
-| CNY | RON | reference | 0.7094 |
-| CZK | RON | reference | 0.2194 |
-| DKK | RON | reference | 0.714 |
-| EGP | RON | reference | 0.0887 |
-| EUR | RON | reference | 5.3368 |
-| GBP | RON | reference | 6.3228 |
-| HKD | RON | reference | 0.6043 |
-| HUF | RON | reference | 0.014695 |
+| AED | RON | reference | 1.2939 |
+| AUD | RON | reference | 3.3172 |
+| BRL | RON | reference | 0.9382 |
+| CAD | RON | reference | 3.3714 |
+| CHF | RON | reference | 5.7591 |
+| CNY | RON | reference | 0.7112 |
+| CZK | RON | reference | 0.2189 |
+| DKK | RON | reference | 0.7127 |
+| EGP | RON | reference | 0.0882 |
+| EUR | RON | reference | 5.3272 |
+| GBP | RON | reference | 6.3336 |
+| HKD | RON | reference | 0.6055 |
+| HUF | RON | reference | 0.014677 |
 | IDR | RON | reference | 0.000263 |
-| ILS | RON | reference | 1.5345 |
-| INR | RON | reference | 0.05 |
-| ISK | RON | reference | 0.039184 |
-| JPY | RON | reference | 0.030022 |
-| KRW | RON | reference | 0.003564 |
-| MDL | RON | reference | 0.2655 |
-| MXN | RON | reference | 0.258 |
-| MYR | RON | reference | 1.1622 |
-| NOK | RON | reference | 0.5018 |
-| NZD | RON | reference | 2.6877 |
-| PHP | RON | reference | 0.0753 |
-| PLN | RON | reference | 1.2219 |
-| RSD | RON | reference | 0.0455 |
-| RUB | RON | reference | 0.0567 |
-| SEK | RON | reference | 0.4792 |
-| SGD | RON | reference | 3.7073 |
-| THB | RON | reference | 0.142 |
-| TRY | RON | reference | 0.0957 |
-| UAH | RON | reference | 0.1057 |
-| USD | RON | reference | 4.743 |
-| XAU | RON | reference | 19837.126 |
-| XDR | RON | reference | 6.4319 |
-| ZAR | RON | reference | 0.2886 |
+| ILS | RON | reference | 1.528 |
+| INR | RON | reference | 0.0501 |
+| ISK | RON | reference | 0.039113 |
+| JPY | RON | reference | 0.030037 |
+| KRW | RON | reference | 0.003574 |
+| MDL | RON | reference | 0.265 |
+| MXN | RON | reference | 0.2566 |
+| MYR | RON | reference | 1.164 |
+| NOK | RON | reference | 0.5043 |
+| NZD | RON | reference | 2.6906 |
+| PHP | RON | reference | 0.0754 |
+| PLN | RON | reference | 1.2189 |
+| RSD | RON | reference | 0.0454 |
+| RUB | RON | reference | 0.0573 |
+| SEK | RON | reference | 0.4793 |
+| SGD | RON | reference | 3.7136 |
+| THB | RON | reference | 0.1415 |
+| TRY | RON | reference | 0.0958 |
+| UAH | RON | reference | 0.1054 |
+| USD | RON | reference | 4.752 |
+| XAU | RON | reference | 19812.442 |
+| XDR | RON | reference | 6.4366 |
+| ZAR | RON | reference | 0.2887 |
+
+</details>
 
 Source: [Official rates published by BNR, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/bnr/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -356,7 +359,8 @@ Need the whole archive rather than an API call? The same published tables are mi
 - [All central bank sources](https://allratestoday.com/central-bank-rates-api/)
 - [Package docs on the site](https://allratestoday.com/docs/sdk/bnr-exchange-rate/) · [ERP integration guides](https://allratestoday.com/docs/integrations/)
 - [API documentation](https://allratestoday.com/docs/#central-bank) · [Interactive reference](https://allratestoday.com/api-reference/) · [Methodology](https://allratestoday.com/official-rates-methodology/)
-- [Register (free)](https://allratestoday.com/register) · [Pricing](https://allratestoday.com/pricing/)
+- [Register (Free)](https://allratestoday.com/register) · [Dashboard](https://allratestoday.com/profile) · [Pricing](https://allratestoday.com/pricing/)
+- [Status](https://allratestoday.com/status)
 - [GitHub](https://github.com/AllRates-Today/bnr-exchange-rate)
 
 ## 📜 License
