@@ -47,47 +47,47 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-28 by National Bank of Romania — 37 rates. Updated 2026-10-28.</summary>
+<summary>Table as text: published 2026-10-29 by National Bank of Romania — 37 rates. Updated 2026-10-29.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | RON | reference | 1.3092 |
-| AUD | RON | reference | 3.3794 |
-| BRL | RON | reference | 0.8989 |
-| CAD | RON | reference | 3.4212 |
-| CHF | RON | reference | 5.7911 |
-| CNY | RON | reference | 0.7213 |
-| CZK | RON | reference | 0.2195 |
-| DKK | RON | reference | 0.7158 |
-| EGP | RON | reference | 0.0857 |
-| EUR | RON | reference | 5.3495 |
-| GBP | RON | reference | 6.3848 |
-| HKD | RON | reference | 0.613 |
-| HUF | RON | reference | 0.014569 |
+| AED | RON | reference | 1.3054 |
+| AUD | RON | reference | 3.3736 |
+| BRL | RON | reference | 0.8967 |
+| CAD | RON | reference | 3.4279 |
+| CHF | RON | reference | 5.7864 |
+| CNY | RON | reference | 0.7197 |
+| CZK | RON | reference | 0.2197 |
+| DKK | RON | reference | 0.7152 |
+| EGP | RON | reference | 0.0855 |
+| EUR | RON | reference | 5.3449 |
+| GBP | RON | reference | 6.3877 |
+| HKD | RON | reference | 0.611 |
+| HUF | RON | reference | 0.014606 |
 | IDR | RON | reference | 0.000265 |
-| ILS | RON | reference | 1.5459 |
-| INR | RON | reference | 0.0505 |
-| ISK | RON | reference | 0.039277 |
-| JPY | RON | reference | 0.030456 |
-| KRW | RON | reference | 0.003593 |
-| MDL | RON | reference | 0.2651 |
-| MXN | RON | reference | 0.2577 |
-| MYR | RON | reference | 1.1795 |
-| NOK | RON | reference | 0.5158 |
-| NZD | RON | reference | 2.694 |
-| PHP | RON | reference | 0.0752 |
-| PLN | RON | reference | 1.2137 |
+| ILS | RON | reference | 1.5416 |
+| INR | RON | reference | 0.0503 |
+| ISK | RON | reference | 0.039359 |
+| JPY | RON | reference | 0.030338 |
+| KRW | RON | reference | 0.003584 |
+| MDL | RON | reference | 0.2655 |
+| MXN | RON | reference | 0.2561 |
+| MYR | RON | reference | 1.1813 |
+| NOK | RON | reference | 0.5166 |
+| NZD | RON | reference | 2.692 |
+| PHP | RON | reference | 0.0751 |
+| PLN | RON | reference | 1.2156 |
 | RSD | RON | reference | 0.0455 |
-| RUB | RON | reference | 0.0597 |
-| SEK | RON | reference | 0.4837 |
-| SGD | RON | reference | 3.7498 |
-| THB | RON | reference | 0.1424 |
-| TRY | RON | reference | 0.0965 |
-| UAH | RON | reference | 0.1055 |
-| USD | RON | reference | 4.8088 |
-| XAU | RON | reference | 19452.892 |
-| XDR | RON | reference | 6.4986 |
-| ZAR | RON | reference | 0.2885 |
+| RUB | RON | reference | 0.0595 |
+| SEK | RON | reference | 0.4851 |
+| SGD | RON | reference | 3.7423 |
+| THB | RON | reference | 0.1421 |
+| TRY | RON | reference | 0.096 |
+| UAH | RON | reference | 0.1052 |
+| USD | RON | reference | 4.7943 |
+| XAU | RON | reference | 19313.555 |
+| XDR | RON | reference | 6.4854 |
+| ZAR | RON | reference | 0.2886 |
 
 </details>
 
@@ -252,6 +252,7 @@ The National Bank of Romania announces the leu's official reference rates for ar
 
 - Publisher's own page: [Exchange rates — XML feeds](https://www.bnr.ro/en/24006-exchange-rate-list-in-xml-format) · [www.bnr.ro/en](https://www.bnr.ro/en)
 - Publication: every business day; the exact schedule, freshness status and any current delay are on the [National Bank of Romania rates page](https://allratestoday.com/central-bank-rates-api/bnr/)
+- In the API: usually by **10:15 UTC** (measured over the last 10 publications). Schedule a sync at or after that time and retry hourly until `rate_date` moves; every response carries the same figure as `available_by_utc` — see [when to poll](https://allratestoday.com/docs/#when-to-poll)
 - Values are stored unmodified, with the publisher's own `rate_date` on every row — see the [methodology](https://allratestoday.com/official-rates-methodology/)
 
 ## 🧭 Reading the numbers
