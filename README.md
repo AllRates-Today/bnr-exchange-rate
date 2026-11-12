@@ -32,47 +32,47 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-11 by National Bank of Romania — 37 rates. Updated 2026-11-11.</summary>
+<summary>Table as text: published 2026-11-12 by National Bank of Romania — 37 rates. Updated 2026-11-12.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| AED | RON | reference | 1.3067 |
-| AUD | RON | reference | 3.2962 |
-| BRL | RON | reference | 0.8595 |
-| CAD | RON | reference | 3.3746 |
-| CHF | RON | reference | 5.7879 |
-| CNY | RON | reference | 0.7194 |
+| AED | RON | reference | 1.3112 |
+| AUD | RON | reference | 3.2917 |
+| BRL | RON | reference | 0.8626 |
+| CAD | RON | reference | 3.3817 |
+| CHF | RON | reference | 5.7938 |
+| CNY | RON | reference | 0.7222 |
 | CZK | RON | reference | 0.2194 |
 | DKK | RON | reference | 0.7151 |
-| EGP | RON | reference | 0.0896 |
-| EUR | RON | reference | 5.346 |
-| GBP | RON | reference | 6.3924 |
-| HKD | RON | reference | 0.6117 |
-| HUF | RON | reference | 0.014639 |
-| IDR | RON | reference | 0.000264 |
-| ILS | RON | reference | 1.5117 |
+| EGP | RON | reference | 0.09 |
+| EUR | RON | reference | 5.3459 |
+| GBP | RON | reference | 6.3935 |
+| HKD | RON | reference | 0.6139 |
+| HUF | RON | reference | 0.014683 |
+| IDR | RON | reference | 0.000265 |
+| ILS | RON | reference | 1.5165 |
 | INR | RON | reference | 0.0512 |
-| ISK | RON | reference | 0.039079 |
-| JPY | RON | reference | 0.030185 |
-| KRW | RON | reference | 0.003592 |
-| MDL | RON | reference | 0.2656 |
-| MXN | RON | reference | 0.2581 |
-| MYR | RON | reference | 1.1778 |
-| NOK | RON | reference | 0.5035 |
-| NZD | RON | reference | 2.6825 |
-| PHP | RON | reference | 0.0759 |
-| PLN | RON | reference | 1.2144 |
-| RSD | RON | reference | 0.0454 |
-| RUB | RON | reference | 0.0579 |
-| SEK | RON | reference | 0.4835 |
-| SGD | RON | reference | 3.7425 |
+| ISK | RON | reference | 0.039135 |
+| JPY | RON | reference | 0.030182 |
+| KRW | RON | reference | 0.003618 |
+| MDL | RON | reference | 0.2652 |
+| MXN | RON | reference | 0.2594 |
+| MYR | RON | reference | 1.1806 |
+| NOK | RON | reference | 0.5048 |
+| NZD | RON | reference | 2.6808 |
+| PHP | RON | reference | 0.0756 |
+| PLN | RON | reference | 1.2147 |
+| RSD | RON | reference | 0.0455 |
+| RUB | RON | reference | 0.0581 |
+| SEK | RON | reference | 0.4838 |
+| SGD | RON | reference | 3.749 |
 | THB | RON | reference | 0.1426 |
-| TRY | RON | reference | 0.0955 |
-| UAH | RON | reference | 0.1058 |
-| USD | RON | reference | 4.7991 |
-| XAU | RON | reference | 19434.099257 |
-| XDR | RON | reference | 6.4868 |
-| ZAR | RON | reference | 0.2901 |
+| TRY | RON | reference | 0.0956 |
+| UAH | RON | reference | 0.106 |
+| USD | RON | reference | 4.8155 |
+| XAU | RON | reference | 19031.241 |
+| XDR | RON | reference | 6.4992 |
+| ZAR | RON | reference | 0.2899 |
 
 </details>
 
